@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './bootstrap-override.scss';
+import UserLoginPage from './pages/UserLoginPage';
+import UserSignupPage from './pages/UserSignupPage';
 import reportWebVitals from './reportWebVitals';
+import './18n';
+import LanguageSelector from './components/LanguageSelector';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <UserLoginPage />
+    <LanguageSelector />
+  </div>,
   document.getElementById('root')
 );
 
